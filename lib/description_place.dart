@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
   // String descriptionDummy =
@@ -69,7 +70,8 @@ class DescriptionPlace extends StatelessWidget {
       ],
     );
     return Column(
-      children: [title_stars, description],
+      children: [title_stars, description, ButtonPurple("Navegate")],
+      crossAxisAlignment: CrossAxisAlignment.start,
     );
   }
 }

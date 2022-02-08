@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:trips_app/description_place.dart';
+import 'package:trips_app/platzi_trips.dart';
 import 'package:trips_app/review_list.dart';
 import 'gradient_back.dart';
+import 'header_appbar.dart';
+import 'platzi_trips.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -23,22 +26,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Scaffold(
-            body: Stack(
-          children: [
-            ListView(
-              children: [
-                DescriptionPlace("Bahamas", 4,
-                    "Amet non laboris pariatur irure exercitation veniam sint anim ad cupidatat consectetur cupidatat id. Sunt incididunt nostrud velit reprehenderit cupidatat adipisicing exercitation cupidatat ut aliqua commodo nostrud. Elit ullamco occaecat reprehenderit excepteur aliqua cillum elit irure aliqua ea eu duis aute. Aliquip exercitation laborum consectetur minim anim non amet elit non dolor sit ipsum proident pariatur. Sit magna consequat est enim consectetur nisi exercitation aliquip."),
-                ReviewList()
-              ],
-            ),
-            GradientBack("Popular")
-          ],
-        )
-
-            //ReviewList()
-            ));
+        home: PlatziTrips());
   }
 }
 

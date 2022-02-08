@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class GradientBack extends StatelessWidget {
   String title = "Popular";
 
-  GradientBack(this.title);
+  GradientBack(this.title, {Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,7 +23,7 @@ class GradientBack extends StatelessWidget {
             fontFamily: "Lato",
             fontWeight: FontWeight.bold),
       ),
-      alignment: Alignment(-0.9, -0.6),
+      alignment: const Alignment(-0.9, -0.6),
     );
   }
 }
