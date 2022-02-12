@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:trips_app/description_place.dart';
 import 'package:trips_app/platzi_trips.dart';
-import 'package:trips_app/review_list.dart';
-import 'gradient_back.dart';
-import 'header_appbar.dart';
 import 'platzi_trips.dart';
 
 void main() {
